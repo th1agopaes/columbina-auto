@@ -1,10 +1,11 @@
-//! End-to-end check: the real binary starts and prints its title.
+//! End-to-end check: the real binary prints its title with `--version`, without a window.
 
 use std::process::Command;
 
 #[test]
 fn prints_the_game_and_engine_versions() {
     let output = Command::new(env!("CARGO_BIN_EXE_columbina-auto"))
+        .arg("--version")
         .output()
         .expect("the game binary should start");
 
