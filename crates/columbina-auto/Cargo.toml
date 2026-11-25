@@ -9,3 +9,6 @@ publish.workspace = true
 
 [dependencies]
 sandbina.workspace = true
+
+[lints]
+workspace = true
