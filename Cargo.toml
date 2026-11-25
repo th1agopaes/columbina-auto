@@ -1,0 +1,16 @@
+[workspace]
+# Every folder in crates/ is a member (the layout used by ripgrep, Bevy and Ruff).
+members = ["crates/*"]
+# A virtual workspace has no package edition to infer the resolver from.
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/th1agopaes/columbina-auto"
+# Not meant for crates.io: blocks an accidental `cargo publish`.
+publish = false
+
+[workspace.dependencies]
+sandbina = { path = "crates/sandbina" }
