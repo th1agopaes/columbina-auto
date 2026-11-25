@@ -2,6 +2,9 @@
 //!
 //! It renders on the CPU and grows only with what the game needs, one phase
 //! at a time. The reasons are in `docs/adr/0001-use-winit-and-softbuffer.md`.
+mod app;
+
+pub use app::run;
 
 /// Engine version, read from `Cargo.toml` at compile time.
 ///
