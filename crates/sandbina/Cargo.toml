@@ -1,0 +1,13 @@
+[package]
+name = "sandbina"
+description = "Small software-rendered 2D engine behind Columbina Auto"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+
+[lints]
+workspace = true

@@ -1,0 +1,27 @@
+name: Feature or phase task
+description: A new feature for the game or the engine, with acceptance criteria.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What the player (or the engine) gains, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable items that say when this is done.
+      placeholder: |
+        - [ ] Must: ...
+        - [ ] Should: ...
+        - [ ] Could: ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Links, references, open questions or a related ADR.
